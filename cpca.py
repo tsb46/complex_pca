@@ -71,7 +71,6 @@ def pca(input_data, n_comps, verbose, n_iter=10):
                    'exp_var': explained_variance_,
                    'pc_scores': pc_scores
                    }   
-    breakpoint()
     return output_dict
 
 
