@@ -143,7 +143,7 @@ The SVD output and its derivatives are written to a MATLAB file (.mat) that may 
   'U': left singular vectors (2d array - ROIs/voxels by components),
   's' singular values (1d array),
   'Va': right singular vectors (2d array - components by time),
-  'loadings': normalized right singular vectors b/w -1 and 1 (2d array - components by time),
+  'loadings': normalized right singular vectors b/w -1 and 1 (2d array - components by ROIs/voxels),
   'exp_var': eigenvalues (1d array),
   'pc_scores': complex principal component scores/time courses (2d array - time by components),
   'params': dictionary of input parameters
