@@ -44,7 +44,7 @@ def write_results(phase_ts, rotation, n, mask, header,
     if out_prefix is None:
         out_prefix = f'cpca'
         if rotation is not None:
-            out_prefix += f'_{rotate}'
+            out_prefix += f'_{rotation}'
     out_prefix += f'_recon_n{n+1}'
     if file_format in ('cifti', 'nifti'):
         write_out(phase_ts, mask, header, file_format, out_prefix)
