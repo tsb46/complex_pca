@@ -75,7 +75,7 @@ def cpca_recon(cpca_res, rotation, file_format, mask, header,
     if out_prefix is None:
         out_prefix = f'cpca'
         if rotation is not None:
-            out_prefix += f'_{rotate}'
+            out_prefix += f'_{rotation}'
     out_prefix += f'_recon_metadata'
     metadata = {
         'phase_bin_index': bin_indx_all,

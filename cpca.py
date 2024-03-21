@@ -50,7 +50,8 @@ def package_parameters(n_comps, mask_fp, file_format,
 
 def pca(input_data, n_comps, verbose, n_iter=10):
     # compute pca
-    print('performing PCA/CPCA')
+    if verbose:
+        print('performing PCA/CPCA')
     # get number of observations
     n_samples = input_data.shape[0]
     # fbpca pca
@@ -75,7 +76,8 @@ def pca(input_data, n_comps, verbose, n_iter=10):
 
 
 def rotation(pca_output, data, rotation, verbose):
-    print(f'applying {rotation} to PCA/CPCA loadings')
+    if verbose:
+        print(f'applying {rotation} to PCA/CPCA loadings')
     # rotate PCA weights, if specified, and recompute pc scores
     if rotation == 'varimax':
         rotated_weights, r_mat = varimax(pca_output['loadings'].T)
